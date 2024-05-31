@@ -1,0 +1,6 @@
+<!-- pages/login/login.wxml -->
+<view class="container">
+  <input type="number" placeholder="请输入手机号" bindinput="inputPhone" />
+  <input type="number" placeholder="请输入验证码" bindinput="inputCode" />
+  <button style="background-color: {{buttonColor}};" disabled="{{buttonDisabled}}" bindtap="onLogin">登录</button>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "bottom-nav": "/components/bottomNav/bottomNav"
+  },
+  "navigationBarTitleText": "大秦铁路（股票代码：601006）"
+}

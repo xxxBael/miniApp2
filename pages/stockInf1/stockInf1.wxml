@@ -1,0 +1,76 @@
+pages/stockInf1/stockInf1.wxml
+<view class="container">
+  <view class="row">
+    <view class="column">
+      <text style="font-size: 30px;color: rgb(252, 30, 30);">  {{stockPrice}}</text>
+      <text style="font-size: 12px;color: rgb(252, 30, 30);"> {{stockDifference}}{{stockPercent}}</text>
+    </view>
+    <view class="column">
+      <text style="font-size: 12px;color: red;">高：{{stockHighest}}</text>
+      <text style="font-size: 12px;color:green">低：{{stockLowest}}</text>
+      
+    </view>
+    <view class="column">
+      <text style="font-size: 12px;color:green">开：{{stockOpen}}</text>
+      <text style="font-size: 12px;">换：{{stockChange}}%</text>
+      
+    </view>
+    <view class="column">
+      <text style="font-size: 12px;">量：{{stockVolume}}万</text>
+      <text style="font-size: 12px;">额：{{stockTurnover}}亿</text>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="home" style="">
+	
+	<view class='log' style="">
+		<view class="log_box" wx:for="{{list}}" wx:key wx:for-index="index" data-index="{{index}}" bindtap='switchNav'>
+			<view class="{{currentTab==index?'selected':'default'}}">{{item.name}}</view>
+		</view>
+	</view>
+
+
+	<swiper class="swiper_box" current='{{currentTab}}' bindchange='bindChange' style="">
+
+		<swiper-item style="display: flex; width: 100%;">
+			<view style="width: 80%;">
+        <image src="{{kChartData}}" mode="aspectFit" style="width: 100%;"></image>
+    </view>
+    <view style="width: 20%; display: flex; flex-direction: column; justify-content: center; gap: 10px;">
+    <text style="font-size: 9px;color: red;">买1{{stockBuy1}}--{{stockBuy11}}</text>
+    <text style="font-size: 9px;color: red;">买2{{stockBuy2}}--{{stockBuy22}}</text>
+    <text style="font-size: 9px;color: red;">买3{{stockBuy3}}--{{stockBuy33}}</text>
+    <text style="font-size: 9px;color: red;">买4{{stockBuy4}}--{{stockBuy44}}</text>
+    <text style="font-size: 9px;color: red;">买5{{stockBuy5}}--{{stockBuy55}}</text>
+    <text >----------</text>
+    <text style="font-size: 9px;color: red;">卖1{{stockSell1}}--{{stockSell11}}</text>
+    <text style="font-size: 9px;color: red;">卖2{{stockSell2}}--{{stockSell22}}</text>
+    <text style="font-size: 9px;color: red;">卖3{{stockSell3}}--{{stockSell33}}</text>
+    <text style="font-size: 9px;color: red;">卖4{{stockSell4}}--{{stockSell44}}</text>
+    <text style="font-size: 9px;color: red;">卖5{{stockSell5}}--{{stockSell55}}</text>
+</view>
+
+    
+		</swiper-item>
+
+		<swiper-item>
+<image src="{{kChartData1}}" mode="aspectFit"></image>
+		</swiper-item>
+
+		<swiper-item>
+<image src="{{kChartData2}}" mode="aspectFit"></image>
+		</swiper-item>
+    <swiper-item>
+<image src="{{kChartData3}}" mode="aspectFit"></image>
+		</swiper-item>
+	</swiper>
+
+</view>
+
+<bottom-nav id="bottomNav" selected="0" bind:share="handleShare"></bottom-nav>
+
+
+

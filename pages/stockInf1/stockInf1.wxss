@@ -1,0 +1,35 @@
+/* pages/stockInf1/stockInf1.wxss */
+.home{width: 100%;height:70%;position: absolute;left: 0;top: 70px;}
+
+.log{height: 10%;display: flex;justify-content: space-between;align-items: center;padding: 0 20rpx;}
+
+.default{color: black;}
+
+.swiper_box{border: 1px solid rgb(209, 208, 208);height: 40%;margin: 0 20rpx;}
+
+.log_box{padding-bottom: 20rpx;}
+
+.selected{color: rgb(20, 20, 20);font-weight: 600;padding-bottom: 10rpx;border-bottom: 5rpx solid red;}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; /* 使子元素在垂直方向上均匀分布 */
+  height: 165px; /* 设置高度为100%，使其占满整个页面 */
+  padding-top: 0; /* 设置顶部内边距为0，使其紧贴页面上方 */
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%; /* 将容器的宽度设置为25%，使得一行可以放置4个容器 */
+}
+

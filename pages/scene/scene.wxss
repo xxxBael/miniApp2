@@ -1,0 +1,113 @@
+.home{width: 100%;height: 310px;position: absolute;left: 0;bottom: 0;}
+.home-text{font-size: 21px;font-weight:700;color: #333;width: 50%;margin-bottom:0;}
+.log{height: 30px;display: flex;justify-content: space-between;align-items: center;padding: 0 20rpx;}
+
+.default{color: black;}
+
+.swiper_box{border: 1px solid rgb(228, 224, 224);height: 250px;margin: 0 10rpx;}
+
+.log_box{padding-bottom: 20rpx;}
+
+.selected{color: rgb(15, 15, 15);font-weight:900;padding-bottom: 10rpx;border-bottom: 10rpx solid rgb(243, 86, 86);}
+.search-input {
+  width: 100%;
+  padding: 0 20px;  /* 只设置左右的padding */
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  font-size: 15px;
+  margin-bottom: 1px;  /* 添加下边距 */
+}
+.stock-text{
+  font-size: 10px;
+  color: rgb(128, 127, 127);
+}
+.stock-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.header-item1{
+  font-size: 15px;
+  color: #333;
+  width: 50%;
+}
+.header-item2 {
+  font-size: 15px;
+  color: #333;
+  width: 25%;
+}
+.header-item3 {
+  font-size: 15px;
+  color: #333;
+  width: 25%;
+  text-align: right;
+}
+.stock-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.stock-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stock-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;  /* 设置固定宽度 */
+}
+
+.stock-name {
+  font-size: 16px;
+  color: #333;
+}
+
+.stock-code {
+  font-size: 14px;
+  color: #666;
+}
+
+.stock-price {
+  font-size: 14px;
+  color: rgb(174, 12, 238);
+  width: 25%;  /* 设置固定宽度 */
+  text-align: left;
+}
+
+.stock-change {
+  font-size: 14px;
+  width: 25%;  /* 设置固定宽度 */
+  text-align: right;
+}
+/* pages/list/index.wxss */
+.container1 view{
+  display: inline-block;
+  width:300px;
+  height:130px;
+  text-align: center;
+  line-height: 100px;
+}
+ 
+
+.container1{
+  display: flex;
+  justify-content: space-around;
+  white-space:nowrap;
+  border: 1px solid red;
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 310px;
+}
+
+.container1 view image {
+  width: 100%;
+  height: auto;
+}

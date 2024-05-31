@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/scene/scene",
+    "pages/member/member",
+    "pages/wallet/wallet",
+    "pages/mine/mine",
+    "pages/login/login",
+    "pages/stockInf1/stockInf1"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "同花顺模拟炒股",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/index.png",
+        "selectedIconPath": "pages/images/index-active.png"
+      },
+      {
+        "pagePath": "pages/scene/scene",
+        "text": "行情",
+        "iconPath": "pages/images/scene.png",
+        "selectedIconPath": "pages/images/scene-active.png"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "text": "自选",
+        "iconPath": "pages/images/member.png",
+        "selectedIconPath": "pages/images/member-active.png"
+      },
+      {
+        "pagePath": "pages/wallet/wallet",
+        "text": "消息",
+        "iconPath": "pages/images/wallet.png",
+        "selectedIconPath": "pages/images/wallet-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "用户",
+        "iconPath": "pages/images/mine.png",
+        "selectedIconPath": "pages/images/mine-active.png"
+      }
+    ]
+  }
+}

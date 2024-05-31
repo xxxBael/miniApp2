@@ -1,0 +1,77 @@
+.search-input {
+  width: 100%;
+  padding: 0 20px;  /* 只设置左右的padding */
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  font-size: 15px;
+  margin-bottom: 1px;  /* 添加下边距 */
+}
+.stock-text{
+  font-size: 10px;
+  color: rgb(128, 127, 127);
+}
+.stock-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.header-item1{
+  font-size: 15px;
+  color: #333;
+  width: 50%;
+}
+.header-item2 {
+  font-size: 15px;
+  color: #333;
+  width: 25%;
+}
+.header-item3 {
+  font-size: 15px;
+  color: #333;
+  width: 25%;
+  text-align: right;
+}
+.stock-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.stock-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stock-info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;  /* 设置固定宽度 */
+}
+
+.stock-name {
+  font-size: 16px;
+  color: #333;
+}
+
+.stock-code {
+  font-size: 14px;
+  color: #666;
+}
+
+.stock-price {
+  font-size: 14px;
+  color: rgb(174, 12, 238);
+  width: 25%;  /* 设置固定宽度 */
+  text-align: left;
+}
+
+.stock-change {
+  font-size: 14px;
+  width: 25%;  /* 设置固定宽度 */
+  text-align: right;
+}

@@ -1,0 +1,110 @@
+<!--pages/scene/scene.wxml-->
+<text>{{time}}</text>
+<view class="container">
+  <button bindtap="navigateToLogin">跳转到登录页面</button>
+</view>
+
+
+
+<scroll-view class="container1" scroll-x>
+  <view>
+    <image src="/images/a1.png" mode="widthFix" />
+    A
+  </view>
+  <view>
+    <image src="/images/a2.png" mode="widthFix" />
+    B
+  </view>
+  <view>
+    <image src="/images/a3.png" mode="widthFix" />
+    C
+  </view>
+</scroll-view>
+
+
+<view class="home" style="">
+<text class="home-text">股票排行</text>
+	<view class='log' style="">
+		<view class="log_box" wx:for="{{list}}" wx:key wx:for-index="index" data-index="{{index}}" bindtap='switchNav'>
+			<view class="{{currentTab==index?'selected':'default'}}">{{item.name}}</view>
+		</view>
+	</view>
+
+
+	<swiper class="swiper_box" current='{{currentTab}}' bindchange='bindChange' style="">
+
+		<swiper-item>
+			<view class="stock-header">
+  <text class="header-item1">股票名称</text>
+  <text class="header-item2">最新价</text>
+  <text class="header-item3">涨跌幅</text>
+</view>
+<view class="stock-list" wx:for="{{stocks}}" wx:key="code">
+  <view class="stock-item">
+    <view class="stock-info">
+      <text class="stock-name">{{item.name}}</text>
+      <text class="stock-code">{{item.code}}</text>
+    </view>
+    <text class="stock-price" style="color: {{item.isUp ? 'red' : 'green'}}">{{item.price}}</text>
+    <text class="stock-change" style="color: {{item.isUp ? 'red' : 'green'}}">{{item.change}}</text>
+  </view>
+</view>
+
+		</swiper-item>
+
+		<swiper-item>
+      <view class="stock-header">
+  <text class="header-item1">股票名称</text>
+  <text class="header-item2">最新价</text>
+  <text class="header-item3">涨跌幅</text>
+</view>
+<view class="stock-list" wx:for="{{stocks}}" wx:key="code">
+  <view class="stock-item">
+    <view class="stock-info">
+      <text class="stock-name">{{item.name}}</text>
+      <text class="stock-code">{{item.code}}</text>
+    </view>
+    <text class="stock-price" style="color: {{item.isUp ? 'red' : 'green'}}">{{item.price}}</text>
+    <text class="stock-change" style="color: {{item.isUp ? 'red' : 'green'}}">{{item.change}}</text>
+  </view>
+</view>
+		</swiper-item>
+
+		<swiper-item>
+      <view class="stock-header">
+  <text class="header-item1">股票名称</text>
+  <text class="header-item2">最新价</text>
+  <text class="header-item3">涨跌幅</text>
+</view>
+<view class="stock-list" wx:for="{{stocks}}" wx:key="code">
+  <view class="stock-item">
+    <view class="stock-info">
+      <text class="stock-name">{{item.name}}</text>
+      <text class="stock-code">{{item.code}}</text>
+    </view>
+    <text class="stock-price" style="color: {{item.isUp ? 'red' : 'green'}}">{{item.price}}</text>
+    <text class="stock-change" style="color: {{item.isUp ? 'red' : 'green'}}">{{item.change}}</text>
+  </view>
+</view>
+		</swiper-item>
+    <swiper-item>
+      <view class="stock-header">
+  <text class="header-item1">股票名称</text>
+  <text class="header-item2">最新价</text>
+  <text class="header-item3">涨跌幅</text>
+</view>
+<view class="stock-list" wx:for="{{stocks}}" wx:key="code">
+  <view class="stock-item">
+    <view class="stock-info">
+      <text class="stock-name">{{item.name}}</text>
+      <text class="stock-code">{{item.code}}</text>
+    </view>
+    <text class="stock-price" style="color: {{item.isUp ? 'red' : 'green'}}">{{item.price}}</text>
+    <text class="stock-change" style="color: {{item.isUp ? 'red' : 'green'}}">{{item.change}}</text>
+  </view>
+</view>
+    </swiper-item>
+
+	</swiper>
+	
+</view>

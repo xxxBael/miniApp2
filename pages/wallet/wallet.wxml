@@ -1,0 +1,5 @@
+<!--pages/wallet/wallet.wxml-->
+<text>pages/wallet/wallet.wxml</text>
+<view class="container">
+  <button bindtap="navigateToLogin">查看股票详情</button>
+</view>

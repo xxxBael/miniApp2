@@ -1,0 +1,17 @@
+<input class="search-input" type="text" placeholder="搜索股票"/>
+<text class="stock-text">目前仅展示沪深A股，更多自选请至APP查看~！</text>
+<view class="stock-header">
+  <text class="header-item1">股票名称</text>
+  <text class="header-item2">最新价</text>
+  <text class="header-item3">涨跌幅</text>
+</view>
+<view class="stock-list" wx:for="{{stocks}}" wx:key="code">
+  <view class="stock-item">
+    <view class="stock-info">
+      <text class="stock-name">{{item.name}}</text>
+      <text class="stock-code">{{item.code}}</text>
+    </view>
+    <text class="stock-price" style="color: {{item.isUp ? 'red' : 'green'}}">{{item.price}}</text>
+    <text class="stock-change" style="color: {{item.isUp ? 'red' : 'green'}}">{{item.change}}</text>
+  </view>
+</view>
